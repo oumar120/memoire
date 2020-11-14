@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>e-memoire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- styles -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+  <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+  <link href="assets/css/flexslider.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/color/default.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,600,400italic|Open+Sans:400,600,700" rel="stylesheet">
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" href="assets/ico/logo.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- Navbar
+    ================================================== -->
+      <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <!-- logo --> 
+            <div class="logo">
+              <a href="index.php"><img src="assets/img/logo.jpg" alt="" /></a>
+            </div>
+            <!-- end logo -->
+
+            <!-- top menu -->
+            <div class="navigation">
+              <nav>
+                <ul class="nav topnav">
+                  <li class="active">
+                    <a href="index.php"><i class="icon-home"></i> Accueil </a>
+                  </li>
+                  <li> 
+                    <a href="formulaire.html"><i class="icon-cloud-upload"></i> Publiez votre Memoire</a>
+                  </li>
+                  <li>
+                    <a href="apropos.html"><i class="icon-briefcase"></i> a propos</a>
+                  </li>
+                    
+                </ul>
+              </nav>
+            </div>
+            <!-- end menu -->
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <h3>Note:</h3>
+          <p style="font-size: 16px;">Le site web e-memoire est le premier site au senegal qui permet aux etudiants de publier 
+          leurs memoires gratuitement.Il a pour but de publier un maximum de mémoires d'étudiants en accès gratuit sur internet.<br/>
+          Pour déposer votre mémoire, il suffit de remplir ce formulaire.
+          </p>
+        </div>
+        <div class="span7">
+          <form action="traitement.php" method="post" enctype="multipart/form-data" class="well">
+            <div class="form-group">
+              <label for="ti">titre</label>
+          <input type="text" name="titre" class="form-control span6" placeholder="titre du memoire" required id="ti">
+            </div>
+            <div class="form-group">
+     <div id="content">
+              <label for="au">auteur</label>
+              <input type="text" name="auteur" class="form-control span6" placeholder="auteur du memoire ou anonyme" required id="au">
+            </div>
+            <div class="form-group">
+            <label for="fi">Filiere</label>
+               <input type="text" name="filiere" class="form-control span6" required id="fi" placeholder="ex:telecom,biologie">
+              </div>
+              <div class="form-group">
+                <label for="uni">Université</label>
+                 <input type="text" name="universite" class="form-control span6" required placeholder="ex:ucad,estm" id="uni">
+              </div>
+              <div class="form-group" >
+                <label for="di">Diplome</label>
+                <input type="text" name="diplome" class="form-control span6" required placeholder="ex:licence,master" id="di">
+              </div>
+              <div class="form-group">
+          <label for="me">Memoire au format PDF ou WORD</label>
+          <input type="file" name="memoire" class="form-control" id="me">
+              </div>
+              <i class="icon-hand-right"></i><a href="condition.html" title="consulter" style="text-decoration: underline;"> conditions de publication</a><br/>
+            <input type="submit" class="btn btn-primary" name="envoyer" value="j'accepte les conditions et je publie mon memoire" title="publier">
+          </form>
+        </div>
+      </div> 
+    </div>
+    
+    <!-- Footer
+ ================================================== -->
+  </div>
+  <!-- end wrapper -->
+  
+
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/raphael-min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/google-code-prettify/prettify.js"></script>
+  <script src="assets/js/jquery.elastislide.js"></script>
+  <script src="assets/js/jquery.prettyPhoto.js"></script>
+  <script src="assets/js/jquery.flexslider.js"></script>
+  <script src="assets/js/jquery-hover-effect.js"></script>
+  <script src="assets/js/animate.js"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
